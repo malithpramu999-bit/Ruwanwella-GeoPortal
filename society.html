@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ruwanwella - History & Society</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+<style>
+  body { margin:0; font-family: Arial; background:#f5f5f5; }
+  header { background: linear-gradient(to right, #2E7D32, #388E3C); color:white; padding: 30px 20px; text-align:center; }
+  header h2 { margin:0; }
+  
+  /* NAV */
+  nav { background:#1B5E20; padding:12px; text-align:center; }
+  nav a { color:white; text-decoration:none; margin:0 15px; font-weight:bold; }
+  nav a:hover { text-decoration:underline; }
+  
+  .container { max-width:1300px; margin:20px auto; background:white; border-radius:10px; overflow:hidden; }
+  
+  /* SECTION HEADER */
+  .section-header { background: linear-gradient(to right, #2E7D32, #1B5E20); color:white; padding:18px; text-align:center; font-size:26px; font-weight:bold; }
+  
+  /* HISTORY SECTION */
+  .history { padding:25px; }
+  .history-content { display:flex; gap:20px; align-items:flex-start; }
+  .history-text { flex:1.2; font-size:16px; line-height:1.8; }
+  .history-text b { color:#2E7D32; }
+  .history-images { flex:1; display:grid; grid-template-columns: 1fr 1fr; gap:10px; }
+  .history-images img { width:100%; height:160px; object-fit:cover; border:2px solid #2E7D32; border-radius:6px; }
+  .history-images .big { grid-column: span 2; height:200px; }
+  .img-label { background:#2E7D32; color:white; text-align:center; padding:5px; font-size:12px; font-weight:bold; margin-top:-4px; border-radius:0 0 6px 6px; }
+  
+  /* SOCIETY SECTION */
+  .society { background:#E8F5E9; padding:25px; }
+  .society-grid { display:grid; grid-template-columns: repeat(4, 1fr); gap:20px; }
+  .society-card { background:white; border:2px solid #2E7D32; border-radius:10px; padding:20px; text-align:center; }
+  .society-card i { font-size:35px; color:#2E7D32; margin-bottom:10px; }
+  .society-card h3 { margin:10px 0; color:#1B5E20; }
+  .society-card .big-number { font-size:40px; font-weight:bold; color:#000; }
+  
+  /* RELIGION BAR */
+  .bar { background:#ddd; border-radius:5px; height:20px; margin:5px 0; overflow:hidden; }
+  .bar-fill { height:100%; background:#4CAF50; color:white; text-align:right; padding-right:5px; font-size:12px; line-height:20px; }
+  
+  /* DONUT CHART PLACEHOLDER */
+  .chart { width:120px; height:120px; border-radius:50%; margin:10px auto; border:10px solid #4CAF50; border-right-color:#FFC107; border-bottom-color:#2196F3; }
+  
+  footer { background:#1B5E20; color:white; text-align:center; padding:20px; margin-top:20px; }
+  
+  @media(max-width:1000px){
+    .history-content{flex-direction:column;}
+    .society-grid{grid-template-columns: repeat(2, 1fr);}
+  }
+  @media(max-width:600px){
+    .society-grid{grid-template-columns: 1fr;}
+    .history-images{grid-template-columns: 1fr;}
+    .history-images .big{grid-column: span 1;}
+  }
+</style>
+</head>
+<body>
+      <header>
+    <h2>HISTORY & SOCIETY</h2>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="landmarks.html">Landmarks</a>
+    <a href="clocktower.html">Building</a>
+    <a href="accessibility.html">Accessibility</a>
+    <a href="society.html">History & Society</a>
+    <a href="agriculture.html">Agriculture & Challenges</a>
+  </nav>
+
+  <div class="container">
+    
+    <!-- HISTORY -->
+    <div class="section-header">HISTORY</div>
+    <div class="history">
+      <div class="history-content">
+        <div class="history-text">
+          Ruwanwella, meaning <b>"Ruwan Wisirunu Wella"</b> (a place where gems was scattered), is a historic town linked to the <b>Sitawaka Kingdom</b>. Its heritage includes the Dutch Fort, Jubilee Ambalama, and Pethangoda Uyana, reflecting its royal, cultural, and colonial history.
+        </div>
+        <div class="history-images">
+          <div class="big">
+            <img src="images/ambalama.webp" alt="Dutch Fort">
+            <div class="img-label">Jubilee Ambalama</div>
+          </div>
+          <div>
+            <img src="images/dutch.jpg" alt="Pethangoda Uyana Sign">
+          </div>
+          <div>
+            <img src="images/pethangoda.webp" alt="Jubilee Ambalama Path">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SOCIETY -->
+    <div class="section-header">SOCIETY</div>
+    <div class="society">
+      <div class="society-grid">
+        
+        <!-- POPULATION -->
+        <div class="society-card">
+          <i class="fa-solid fa-users"></i>
+          <h3>POPULATION</h3>
+          <div class="big-number">65797</div>
+        </div>
+
+        <!-- RELIGIONS -->
+        <div class="society-card">
+          <i class="fa-solid fa-place-of-worship"></i>
+          <h3>RELIGIONS</h3>
+          <div style="text-align:left; font-size:14px;">
+            Buddhist <div class="bar"><div class="bar-fill" style="width:85.6%;">85.6%</div></div>
+            Hindus <div class="bar"><div class="bar-fill" style="width:6.6%;">6.6%</div></div>
+            Muslims <div class="bar"><div class="bar-fill" style="width:6.6%;">6.6%</div></div>
+            Christians <div class="bar"><div class="bar-fill" style="width:1.2%;">1.2%</div></div>
+          </div>
+        </div>
+
+        <!-- GENDER -->
+        <div class="society-card">
+          <i class="fa-solid fa-venus-mars"></i>
+          <h3>GENDER</h3>
+          <div class="chart"></div>
+          <p style="font-size:14px;">Male 48.5%<br>Female 51.5%</p>
+        </div>
+
+        <!-- ETHNICITY -->
+        <div class="society-card">
+          <i class="fa-solid fa-people-group"></i>
+          <h3>ETHNICITY</h3>
+          <div class="chart"></div>
+          <p style="font-size:14px;">Sinhalese 85.7%<br>Other 14.3%</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    &copy Created by: K.A.N.A.HARRISON | UoM | 2026
+  </footer>
+</body>
+</html>

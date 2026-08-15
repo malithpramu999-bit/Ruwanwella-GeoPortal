@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ruwanwella Clock Tower - Selected Building</title>
+<meta charset="utf-8" />
+<style>
+  body { margin:0; font-family: Arial; background:#f5f5f5; }
+  
+  /* HEADER */
+  .green-header { background: linear-gradient(to right, #2E7D32, #388E3C); color:white; padding:20px; text-align:center; font-size:28px; font-weight:bold; }
+  
+  /* NAV */
+  nav { background:#1B5E20; padding:12px; text-align:center; }
+  nav a { color:white; text-decoration:none; margin:0 20px; font-weight:bold; }
+  nav a:hover { text-decoration:underline; }
+  
+  /* MAIN CONTAINER */
+  .container { max-width:1300px; margin:20px auto; background:white; padding:25px; border-radius:10px; }
+  
+  /* TITLE SECTION */
+  .title-section { display:flex; align-items:center; gap:15px; margin-bottom:20px; }
+  .title-section .icon { font-size:50px; color:#2E7D32; }
+  .title-section h1 { margin:0; font-size:32px; color:#000; }
+  .title-section h1 span { font-style:italic; font-weight:normal; font-size:18px; display:block; color:#555; }
+  
+  /* TOP ROW: TEXT + IMAGES */
+  .top-row { display:flex; gap:20px; margin-bottom:20px; }
+  .description { background:#DFFFD6; padding:20px; border-radius:10px; flex:1.2; line-height:1.7; font-size:15px; }
+  .top-images { flex:2; display:grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: auto; gap:10px; }
+  .top-images img { width:100%; height:120px; object-fit:cover; border:1px solid #ccc; }
+  
+  /* BOTTOM ROW: SKETCH + PHOTO */
+  .bottom-row { display:flex; gap:20px; }
+  .bottom-row img { height: 500px; width:30%; border:2px solid #2E7D32; border-radius:5px; }
+  
+  footer { background:#1B5E20; color:white; text-align:center; padding:20px; margin-top:30px; }
+  
+  @media(max-width:900px){
+    .top-row, .bottom-row { flex-direction:column; }
+    .bottom-row img { width:100%; }
+    .top-images { grid-template-columns: repeat(2, 1fr); }
+  }
+</style>
+</head>
+<body>
+
+  <div class="green-header">CLOCK TOWER</div>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="landmarks.html">Landmarks</a>
+    <a href="clocktower.html">Building</a>
+    <a href="accessibility.html">Accessibility</a>
+    <a href="society.html">History & Society</a>
+    <a href="agriculture.html">Agriculture & Challenges</a>
+  </nav>
+
+  <div class="container">
+    <!-- TITLE -->
+    <div class="title-section">
+      <div class="icon">🕰️</div>
+      <div>
+        <h1>RUWANWELLA CLOCK TOWER <span>A TIMELESS LANDMARK</span></h1>
+      </div>
+    </div>
+
+    <!-- TOP ROW -->
+    <div class="top-row">
+      <!-- LEFT TEXT -->
+      <div class="description">
+        The Ruwanwella Clock Tower is a prominent landmark located at the center of Ruwanwella town, symbolizing its civic identity and development. Built as a public clock tower, it serves as a focal point for transportation, commerce, and community gatherings. 
+        <br><br>
+        Featuring a simple masonry structure with clock faces visible from multiple directions, it functions as both a practical timepiece and an iconic urban landmark that reflects the town's historical and social significance.
+      </div>
+
+      <!-- RIGHT IMAGES: 3D + ELEVATIONS + PLAN -->
+      <div class="top-images">
+        <img src="images/1.png" alt="3D View">
+        <img src="images/2.jpeg" alt="Elevation 1">
+        <img src="images/3.jpeg" alt="Elevation 2">
+        <img src="images/4.png" alt="Night View">
+        <img src="images/5.png" alt="Evening View">
+        <img src="images/6.jpeg" alt="Floor Plan">
+      </div>
+    </div>
+
+    <!-- BOTTOM ROW -->
+    <div class="bottom-row">
+      <img src="images/3.jpeg" alt="Hand Sketch of Clock Tower">
+      <img src="images/clocktower.jpg" alt="Real Photo of Ruwanwella Clock Tower">
+    </div>
+  </div>
+
+  <footer>
+    &copy Created by: K.A.N.A.HARRISON | UoM | 2026
+  </footer>
+
+</body>
+</html>

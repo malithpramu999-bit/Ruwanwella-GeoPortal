@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ruwanwella - Accessibility & Connectivity</title>
+<meta charset="utf-8" />
+<style>
+  body { margin:0; font-family: Arial; background:#f5f5f5; }
+  
+  /* HEADER */
+  .green-header { background: linear-gradient(to right, #2E7D32, #1B5E20); color:white; padding:20px; text-align:center; font-size:28px; font-weight:bold; }
+  
+  /* NAV */
+  nav { background:#1B5E20; padding:12px; text-align:center; }
+  nav a { color:white; text-decoration:none; margin:0 15px; font-weight:bold; }
+  nav a:hover { text-decoration:underline; }
+  
+  /* MAIN CONTAINER */
+  .container { max-width:1300px; margin:20px auto; background:white; padding:25px; border-radius:10px; }
+  
+  /* TOP SECTION: MAP + TABLE */
+  .top-section { display:flex; gap:20px; margin-bottom:20px; }
+  .map-box { flex:1.2; border:2px solid #2E7D32; border-radius:8px; overflow:hidden; }
+  .map-box img { width:100%; display:block; }
+  
+  .table-box { flex:1; }
+  .table-box table { width:100%; border-collapse:collapse; }
+  .table-box th { background:#2E7D32; color:white; padding:12px; text-align:left; }
+  .table-box td { padding:10px; border-bottom:1px solid #ddd; }
+  .table-box tr:nth-child(even){ background:#f9f9f9; }
+  
+  /* BOTTOM SECTION: 2 IMAGES + TEXT */
+  .bottom-section { display:flex; gap:20px; }
+  .bottom-section img { width:50%; border:2px solid #2E7D32; border-radius:8px; object-fit:cover; }
+  .bridge-info { background:#DFFFD6; padding:20px; border-radius:10px; width:50%; }
+  .bridge-info h3 { margin-top:0; color:#1B5E20; }
+  .bridge-info p { line-height:1.7; font-size:15px; }
+  
+  footer { background:#1B5E20; color:white; text-align:center; padding:20px; margin-top:30px; }
+  
+  @media(max-width:900px){
+    .top-section, .bottom-section { flex-direction:column; }
+    .bottom-section img, .bridge-info { width:100%; }
+  }
+</style>
+</head>
+<body>
+
+  <div class="green-header">ACCESSIBILITY & CONNECTIVITY</div>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="landmarks.html">Landmarks</a>
+    <a href="clocktower.html">Building</a>
+    <a href="accessibility.html">Accessibility</a>
+    <a href="society.html">History & Society</a>
+    <a href="agriculture.html">Agriculture & Challenges</a>
+  </nav>
+
+  <div class="container">
+    <!-- TOP: MAP + DISTANCE TABLE -->
+    <div class="top-section">
+      <div class="map-box">
+        <img src="images/roadmap.jpeg" alt="Ruwanwella Road Map">
+      </div>
+      
+      <div class="table-box">
+        <table>
+          <tr>
+            <th>DESTINATION</th>
+            <th>DISTANCE</th>
+            <th>TIME (min)</th>
+          </tr>
+          <tr><td>AVISSAWELLA</td><td>17.7 km</td><td>25</td></tr>
+          <tr><td>KEGALLE</td><td>30 km</td><td>80</td></tr>
+          <tr><td>YATIYANTOTA</td><td>8.3 km</td><td>10</td></tr>
+          <tr><td>DEHIOWITA</td><td>9.9 km</td><td>15</td></tr>
+          <tr><td>COLOMBO</td><td>70.2 km</td><td>120</td></tr>
+          <tr><td>KANDY</td><td>68.8 km</td><td>110</td></tr>
+          <tr><td>RATHNAPURA</td><td>51.5 km</td><td>150</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <!-- BOTTOM: BRIDGE PHOTO + SKETCH + INFO -->
+    <div class="bottom-section">
+      <img src="images/bridge.jpg" alt="Ruwanwella Suspension Bridge" style = " height: 500px;">
+      
+      <div style="display:flex; flex-direction:column; gap:20px; width:50%;">
+        <img src="images/pencilbridg.PNG" alt="Bridge Sketch" style="width:100%; border:2px solid #2E7D32; border-radius:8px; height: 300px; width: 400px;">
+        
+        <div class="bridge-info">
+          <h3>The Ruwanwella suspension bridge</h3>
+          <p>
+            It is the longest hanging bridge in Sri Lanka. Built across the Kelani River near its confluence with the Gurugoda Oya, it directly connects Ruwanwella town with nearby villages such as Nikawalamulla and Kurupatta to provide easy daily travel for the local residents.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    &copy Created by: K.A.N.A.HARRISON | UoM | 2026
+  </footer>
+
+</body>
+</html>

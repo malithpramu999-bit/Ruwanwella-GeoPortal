@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ruwanwella - Agriculture & Issues</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+<style>
+  body { margin:0; font-family: Arial; background:#f5f5f5; }
+  header { background: linear-gradient(to right, #2E7D32, #388E3C); color:white; padding: 30px 20px; text-align:center; }
+  header h2 { margin:0; }
+  
+  /* NAV */
+  nav { background:#1B5E20; padding:12px; text-align:center; }
+  nav a { color:white; text-decoration:none; margin:0 12px; font-weight:bold; font-size:14px; }
+  nav a:hover { text-decoration:underline; }
+  
+  .container { max-width:1200px; margin:20px auto; background:white; border-radius:10px; overflow:hidden; }
+  
+  /* SECTION HEADER */
+  .section-header { background: linear-gradient(to right, #2E7D32, #1B5E20); color:white; padding:18px; text-align:center; font-size:26px; font-weight:bold; }
+  
+  /* AGRICULTURE SECTION */
+  .agri { padding:30px; background: #F1F8E9; }
+  .agri-grid { display:grid; grid-template-columns: repeat(2, 1fr); gap:20px; align-items:center; position:relative; }
+  .agri-center { 
+    position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); 
+    background:#2E7D32; color:white; padding:25px; border-radius:50%; 
+    width:200px; height:200px; display:flex; align-items:center; justify-content:center; 
+    text-align:center; font-weight:bold; font-size:14px; line-height:1.6; z-index:2;
+  }
+  .crop-card { text-align:center; }
+  .crop-card img { width:180px; height:180px; border-radius:50%; object-fit:cover; border:5px solid #2E7D32; }
+  .crop-card p { font-weight:bold; margin-top:8px; color:#1B5E20; }
+  
+  /* ISSUES SECTION */
+  .issues { padding:30px; }
+  .issue-list { display:grid; gap:15px; margin-bottom:20px; }
+  .issue-item { display:flex; align-items:center; gap:15px; font-size:16px; font-weight:bold; }
+  .issue-item i { font-size:24px; color:#D32F2F; width:30px; }
+  .issue-images { display:grid; grid-template-columns: 1fr 1fr; gap:15px; }
+  .issue-images img { width:100%; height:220px; object-fit:cover; border:2px solid #D32F2F; border-radius:8px; }
+  
+  footer { background:#1B5E20; color:white; text-align:center; padding:20px; margin-top:20px; }
+  
+  @media(max-width:900px){
+    .agri-grid{grid-template-columns: 1fr 1fr;}
+    .agri-center{position:static; transform:none; margin:20px auto;}
+    .issue-images{grid-template-columns: 1fr;}
+  }
+</style>
+</head>
+<body>
+      <header>
+    <h2>AGRICULTURE & CHALLENGES</h2>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="landmarks.html">Landmarks</a>
+    <a href="clocktower.html">Building</a>
+    <a href="accessibility.html">Accessibility</a>
+    <a href="society.html">History & Society</a>
+    <a href="agriculture.html">Agriculture & Challenges</a>
+  </nav>
+
+  <div class="container">
+    
+    <!-- AGRICULTURAL ASPECTS -->
+    <div class="section-header">AGRICULTURAL ASPECTS</div>
+    <div class="agri">
+      <div class="agri-grid">
+        <div class="crop-card">
+          <img src="images/rubber.jpg" alt="Rubber">
+          <p>Rubber</p>
+        </div>
+        <div class="crop-card">
+          <img src="images/coconut.jpg" alt="Coconut">
+          <p>coconut</p>
+        </div>
+        
+        <div class="agri-center">
+          Mainly Tea, Rubber,<br>
+          Coconut & paddy.<br>
+          Minor crops like<br>
+          Paper,Cloves & coffee<br>
+          are also grown.
+        </div>
+        
+        <div class="crop-card">
+          <img src="images/tea.jpg" alt="Tea">
+          <p>Tea</p>
+        </div>
+        <div class="crop-card">
+          <img src="images/paddy.jpeg" alt="Paddy">
+          <p>paddy</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ISSUES & CHALLENGES -->
+    <div class="section-header">ISSUES & CHALLENGES</div>
+    <div class="issues">
+      <div class="issue-list">
+        <div class="issue-item"><i class="fa-solid fa-car"></i> TRAFFIC CONGESTION IN TOWN CENTER</div>
+        <div class="issue-item"><i class="fa-solid fa-cloud-showers-heavy"></i> FLOOD & HEAVY RAIN</div>
+        <div class="issue-item"><i class="fa-solid fa-briefcase"></i> SCARCITY OF JOBS</div>
+        <div class="issue-item"><i class="fa-solid fa-trash"></i> DRAINAGE & WASTE MANAGEMENT ISSUES</div>
+      </div>
+      
+      <div class="issue-images">
+        <img src="images/flood.avif" alt="Flood">
+        <img src="images/waste.jpg" alt="Waste">
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    &copy Created by: K.A.N.A.HARRISON | UoM | 2026
+  </footer>
+</body>
+</html>
