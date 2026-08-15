@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ruwanwella Town Profile</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+<style>
+  body { margin:0; font-family: Arial; background:#f0f0f0; }
+  header { background: linear-gradient(to right, #2E7D32, #388E3C); color:white; padding: 30px 20px; text-align:center; }
+  header h1 { font-size: 56px; margin:0; }
+  header h2 { background:#1976D2; padding:12px; margin:auto; font-size:20px; width:60%; }
+  .profile-bar { background: #1B5E20; color:white; padding:15px; text-align:center; font-size:24px; font-weight:bold; }
+  .content { display:flex; flex-wrap:wrap; padding:30px; gap:30px; max-width:1400px; margin:0 auto; }
+  .left { flex:1; min-width:320px; background:#E8F5E9; padding:25px; border-radius:10px; border-left:5px solid #2E7D32; }
+  .item { display:flex; gap:15px; margin-bottom:20px; }
+  .item i { color:#2E7D32; font-size:22px; }
+  .item b { color:#1B5E20; display:block; }
+  .right { flex:2; min-width:500px; }
+  .maps { display:flex; gap:15px; margin-bottom:20px; }
+  .map-box { border:2px solid #2E7D32; border-radius:8px; text-align:center; background:#fff; flex:1; }
+  .map-box img { width:100%; height:180px; object-fit:contain; display:block; padding:5px; }
+  .map-label { padding:8px; font-size:13px; background:#f5f5f5; font-weight:bold; }
+  .big-map { border:2px solid #2E7D32; border-radius:8px; overflow:hidden; }
+  .big-map iframe { width:100%; height:400px; border:none; }
+  .map-title { background:#2E7D32; color:white; padding:12px; font-weight:bold; text-align:center; font-size:18px; }
+  .description { background:#fff; border:2px solid #2E7D32; border-radius:10px; padding:20px; margin-top:20px; font-style:italic; text-align:center;}
+  footer { background:#1B5E20; color:white; text-align:center; padding:20px; margin-top:30px; }
+nav { background:#1B5E20; padding:12px; text-align:center; }
+  nav a { color:white; text-decoration:none; margin:0 12px; font-weight:bold; font-size:14px; }
+  nav a:hover { text-decoration:underline; }
+  
+</style>
+</head>
+<body>
+
+  <header>
+    <h1>RUWANWELLA</h1>
+    <h2>A TIMELESS TOWN ROOTED IN NATURE AND PROGRESS</h2>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="landmarks.html">Landmarks</a>
+    <a href="clocktower.html">Building</a>
+    <a href="accessibility.html">Accessibility</a>
+    <a href="society.html">History & Society</a>
+    <a href="agriculture.html">Agriculture & Challenges</a>
+  </nav>
+
+  <div class="profile-bar">TOWN PROFILE</div>
+
+  <div class="content">
+    <div class="left">
+      <div class="item"><i class="fa-solid fa-location-dot"></i><div><b>LOCATION</b>- Sabaragamuwa province<br>- Kegalle district</div></div>
+      <div class="item"><i class="fa-solid fa-mountain"></i><div><b>ELEVATION</b>- 32 m above sea level</div></div>
+      <div class="item"><i class="fa-solid fa-cloud-sun"></i><div><b>CLIMATE</b>- Temperature 22 - 30 celsius<br>- Annual rainfall 3500-4000 mm</div></div>
+      <div class="item"><i class="fa-solid fa-location-crosshairs"></i><div><b>AREA</b>- 142.3 km²</div></div>
+      <div class="item"><i class="fa-solid fa-road"></i><div><b>MAIN ACCESS</b>- Kandy - Avissawella</div></div>
+      <div class="item"><i class="fa-solid fa-sack-dollar"></i><div><b>ECONOMY</b>- Trading, services & agriculture</div></div>
+    </div>
+
+    <div class="right">
+      <div class="maps">
+        <div class="map-box">
+          <img src="images/kgalle.webp" alt="Sri Lanka Map">
+          <div class="map-label">SRI LANKA</div>
+        </div>
+        <div class="map-box">
+          <img src="images/district.webp" alt="Kegalle District Map">
+          <div class="map-label">KEGALLE DISTRICT</div>
+        </div>
+      </div>
+      
+      <div class="big-map">
+        <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=80.150%2C6.950%2C80.185%2C6.980&layer=mapnik&marker=6.9667%2C80.1667"></iframe>
+        <div class="map-title">Ruwanwella Base Map</div>
+      </div>
+
+      <div class="description">
+        Ruwanwella is a charming Sri Lankan town where natural beauty meets cultural heritage. 
+        From its lush greenery and river landscapes to its growing urban character, the town 
+        represents a balance between preserving tradition and supporting sustainable development.
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    &copy Created by: K.A.N.A.HARRISON | UoM | 2026
+  </footer>
+
+  
+
+</body>
+</html>
